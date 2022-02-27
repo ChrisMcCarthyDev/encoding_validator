@@ -2,12 +2,12 @@ import string
 
 import pytest
 
+from encoding_validator.encoder_validator import EncoderValidator
 from encoding_validator.encoding_config import EncodingConfig
-from encoding_validator.validator import EncodingValidator
 
 
 @pytest.fixture
-def encoding_validator() -> EncodingValidator:
+def encoding_validator() -> EncoderValidator:
     encoding_config = EncodingConfig(
         encoding_pairs=[
             {" ": " "},
@@ -22,7 +22,7 @@ def encoding_validator() -> EncodingValidator:
             "AAA"
         ]
     )
-    return EncodingValidator(encoding_config)
+    return EncoderValidator(encoding_config)
 
 
 def test_encoding_validator_correct(encoding_validator):
