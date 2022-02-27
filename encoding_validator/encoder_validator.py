@@ -4,9 +4,9 @@ from typing import Optional
 from encoding_validator.encoding_config import EncodingConfig
 
 
-class EncodingValidator:
+class EncoderValidator:
     """
-    The EncodingValidator class is used to encode chars and strings based
+    The EncoderValidator class is used to encode chars and strings based
     on a set of char encoding key/value pairs. The validity of a string can be
     determined by checking is against of a list of valid formats.The
     encoding key-pairs and list of valid_formats are provided in an instance
@@ -15,7 +15,7 @@ class EncodingValidator:
 
     def __init__(self, encoding_config: EncodingConfig):
         """
-        The EncodingValidator constructor.
+        The EncoderValidator constructor.
 
         :param encoding_config: An instance of EncodingConfig.
         """

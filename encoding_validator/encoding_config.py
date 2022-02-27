@@ -6,7 +6,7 @@ from typing import List
 class EncodingConfig:
     """
     The EncodingConfig class holds the char encoding_pairs and valid_formats
-    for use in the EncodingValidator class.
+    for use in the EncoderValidator class.
     """
     def __init__(self, encoding_pairs: List[Dict], valid_formats: List[str]):
         """
