@@ -1,7 +1,7 @@
 from typing import Final
 from typing import Optional
 
-from encoding_config import EncodingConfig
+from encoding_validator.encoding_config import EncodingConfig
 
 
 class EncodingValidator:
