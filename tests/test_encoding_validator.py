@@ -3,7 +3,7 @@ import string
 import pytest
 
 from encoding_validator.encoding_config import EncodingConfig
-from encoding_validator.encoding_validator import EncodingValidator
+from encoding_validator.validator import EncodingValidator
 
 
 @pytest.fixture
